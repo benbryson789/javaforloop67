@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Nested For Loops</title>
+</head>
+<body>
+<script>
+
+	var people = [
+    ["James", 37, "United States", ["eye color", "blue"], ["hair color", "black"]],
+    ["Sondra", 25, "France", ["eye color", "brown"], ["hair color", "black"]],
+    ["Glenn", 35, "Egypt", ["eye color", "hazel"], ["hair color", "red"]],
+    ["Jean", 42, "Spain", ["eye color", "black"], ["hair color", "gray"]]
+];
+
+//people [2][3][1] = "brown";
+//console.log(people [2][3][1]);
+
+for (var i = 0; i < people.length; i++) {
+    console.log("<h2>Person" + (i + 1) + "</h2>")
+
+    for (var details in people[i]) {
+        console.log(people[i][details] + "<br>");
+    }
+}
+
+
+	
+</script>
+</body>
+</html>
